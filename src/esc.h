@@ -20,7 +20,7 @@
 #define NTC_BETA 3950.0
 #define NTC_TR 298.15
 
-#define ALPHA 0.5
+#define ALPHA 1.0
 #define OMEGA_C 25 
 #define DT 20E-3
 

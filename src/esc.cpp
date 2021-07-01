@@ -63,7 +63,7 @@ float ESC::update_voltage(int raw_voltage)
 
 float ESC::update_current(int raw_current)
 {
-    float curr = raw_current*(V_REF/ADC_RES)/(DIFFAMP_GAIN*DIFFAMP_SHUNT)/sqrt(3.0);
+    float curr = raw_current*(V_REF/ADC_RES)/(DIFFAMP_GAIN*DIFFAMP_SHUNT);
     if (curr < 0)
         return 0;
     return curr;
